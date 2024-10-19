@@ -1,0 +1,146 @@
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    color: #2C3639;
+}
+
+h1, h2, h3 {
+    color: rgb(44, 54, 57);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline dotted #3F4E4F 6px;
+    text-underline-offset: 12px;
+}
+
+nav {
+    background-color: #3F4E4F;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 18px;
+    color: #DCD7C9;
+    padding: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #DCD7C9;
+    position: relative;
+}
+
+nav ul li a:hover {
+    color: #A27B5C;
+}
+
+nav ul li a::before {
+    content: "\1F4FC "; /* VHS tape emoji */
+    font-size: 16px;
+    padding-right: 5px;
+}
+
+h1 {
+    font-family: 'Georgia', serif;
+    font-size: 36px;
+    text-align: center;
+    color: #2C3639;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #A27B5C;
+}
+
+h2 {
+    font-family: 'Georgia', serif;
+    font-size: 28px;
+    text-align: center;
+    color: #3F4E4F;
+    padding: 10px;
+}
+
+section.assignments ul {
+    padding-left: 0;
+    list-style: none;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+section.assignments ul li {
+    background-color: #A27B5C;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 18px;
+}
+
+section.assignments ul li a {
+    text-decoration: none;
+    color: #DCD7C9;
+    font-weight: bold;
+}
+
+section.assignments ul li a:hover {
+    color: #3F4E4F;
+}
+
+section.assignments ul li a::before {
+    content: "\25B6 "; /* Play button emoji */
+    font-size: 16px;
+    padding-right: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #3F4E4F;
+    color: #DCD7C9;
+}
+
+footer a {
+    color: #A27B5C;
+    text-decoration: none;
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 16px;
+}
+
+footer a:hover {
+    color: #2C3639;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+p::before {
+    content: "\1F3B5 "; /* Music note emoji */
+    font-size: 24px;
+    padding-right: 10px;
+}
+
+footer p::before {
+    content: "\1F4C0 "; /* DVD emoji */
+    font-size: 24px;
+    padding-right: 10px;
+}
+
+a[href="#top"] {
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    color: #3F4E4F;
+    text-decoration: underline;
+}
+
+a[href="#top"]:hover {
+    color: #A27B5C;
+}
