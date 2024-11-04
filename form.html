@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reserve Your Room</title>
+    <link rel="stylesheet" href="/css/form-style.css">
 </head>
 <body>
     <div id="wrapper">
@@ -88,16 +89,16 @@
                     </select>
                 </div>
 
+                <div class="radio">
+                    <span>Ocean View (add'l cost)</span>
+                    <label for="view">Yes</label>
+                    <input type="radio" name="view" id="yes" value="yes">
+                    <label for="view">No</label>
+                    <input type="radio" name="view" id="no" value="no">
+                </div>
                
                 <div>
-                    <label>Ocean View</label>
-                    <input type="radio" id="oceanViewYes" name="oceanView" value="yes" required> Yes
-                    <input type="radio" id="oceanViewNo" name="oceanView" value="no" required> No
-                </div>
-
-                
-                <div>
-                    <label for="notes">List Allergies or Other Requests</label>
+                    <label for="notes">Allergies or Special Requests</label>
                     <textarea id="notes" name="notes"></textarea>
                 </div>
 
@@ -109,23 +110,23 @@
 
             
                 <div>
-                    <label for="agreeTerms">I agree to all terms listed above</label>
+                    <label for="agreeTerms">I agree to all terms</label>
                     <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
                 </div>
 
                
                 <div>
-                    <label for="password">Create a password to return. Username is your email</label>
+                    <label for="password">Create a password</label>
                     <input type="password" id="password" name="password" required>
                 </div>
 
               
                 <div>
-                    <input type="submit" value="Submit">
+                    <button type="submit">Submit</button>
                 </div>
 
                 <div>
-                    <input type="reset" value="Reset">
+                    <button type="reset">Reset</button>
                 </div>
             </form>
         </section>
