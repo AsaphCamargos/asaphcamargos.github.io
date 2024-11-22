@@ -170,3 +170,123 @@ footer ul {
 footer p {
     clear: both;
 }
+
+/* media queries go below */
+
+@media (max-width: 360px) {
+
+    html {
+        line-height: 135%;
+    }
+
+    nav a {
+        padding: 5px;
+        letter-spacing: normal;
+        font-size: .9rem;
+    }
+
+    nav ul {
+        padding-left: 10px;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        text-shadow: none;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    img {
+        float: none;
+        max-width: 60%;
+        margin-left: 20%;
+    }
+
+    .rate {
+        font-size: 1rem;
+    }
+
+    .details,
+    .ingredients,
+    .instructions,
+    .nutrition {
+    width: 90%;
+    float: none;
+    }
+
+    .col1,
+    .col2,
+    .col3 {
+    display: block;
+    float: none;
+    width: 90%;
+    }
+
+}
+
+@media (max-width: 810px) {
+    html {
+        font-size: 1.4rem;
+    }
+
+    nav a {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    img {
+        float: left; 
+        max-width: 40%; 
+        margin: 0 5% 20px 0; 
+        shape-outside: circle(50%); 
+    }
+
+    h1 {
+        font-size: 2rem; 
+        margin: 4% 0; 
+    }
+
+    h2 {
+        font-size: 1.8rem; 
+        margin-top: 5%;
+    }
+
+    .details,
+    .ingredients,
+    .instructions,
+    .nutrition {
+        width: 100%; 
+        float: none;
+        margin-bottom: 20px; 
+    }
+
+    blockquote {
+        width: 60%; 
+        padding: 70px 30px; 
+        height: auto; 
+        margin: 20px auto; 
+    }
+
+    .col1,
+    .col2,
+    .col3 {
+        display: block;
+        float: none;
+        width: 100%; 
+        text-align: center; 
+    }
+
+    footer p {
+        margin-top: 20px; 
+    }
+}
