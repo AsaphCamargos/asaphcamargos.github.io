@@ -40,6 +40,8 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #A27B5C;
+    transform: scale(1.1);
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 nav ul li a::before {
@@ -54,8 +56,11 @@ h1 {
     text-align: center;
     color: #2C3639;
     padding: 20px;
-    margin-bottom: 20px;
+    margin: 20px auto;
     border-bottom: 3px solid #A27B5C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h2 {
@@ -80,6 +85,9 @@ section.assignments ul li {
     border-radius: 5px;
     font-family: 'Lucida Sans', sans-serif;
     font-size: 18px;
+    animation: fadeIn 1.5s ease-out;
+    animation-delay: calc(0.2s * var(--order));
+    animation-fill-mode: backwards;
 }
 
 section.assignments ul li a {
@@ -96,6 +104,15 @@ section.assignments ul li a::before {
     content: "\25B6 "; /* Play button emoji */
     font-size: 16px;
     padding-right: 5px;
+}
+
+section.assignments {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 80%; 
+    background-color: #DCD7C9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 footer {
@@ -143,4 +160,35 @@ a[href="#top"] {
 
 a[href="#top"]:hover {
     color: #A27B5C;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInHeader {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px auto;
+    animation: fadeInHeader 1.5s ease-out;
 }
