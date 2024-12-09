@@ -1,60 +1,140 @@
+:root {
+    --font-size: 1.5rem;
+    --color-red: #bd114c;
+    --color-yellow: #ffb03a;
+    --gradient-background: linear-gradient(to right, #bd114c, #ffb03a);
+    --gradient-footer: linear-gradient(to bottom, #1e90ff, #32cd32);
+}
+
 html {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 1.5rem;
+    font-size: calc(16px + 0.5vw);
+    background-color: #f9f9f9;
+    color: #333;
 }
 
 h1, h2, h3 {
-    color: #bb1b47;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: calc(2rem + 1vw);
     text-transform: uppercase;
     font-weight: normal;
-    letter-spacing: 0.1rem;
+    letter-spacing: calc(0.1rem + 0.05vw);
+    background: var(--gradient-background);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 h2 {
     font-size: 2rem;
-    border-bottom: px solid #bb1b47;
-    padding-bottom: 0.5rem;;
+    border-bottom: 2px solid var(--color-red);
+    padding-bottom: 0.5rem;
+    color: var(--color-red);
+    text-align: left;
+    margin-bottom: 15px;
 }
 
 h3 {
     font-size: 1.5rem;
+    color: var(--color-yellow);
+    margin-bottom: 10px;
 }
 
 .site-intro {
     font-size: 1.25rem;
+    background: var(--gradient-background);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    margin-bottom: 25px;
+    border-left: 5px solid var(--color-red);
+    line-height: 1.8;
+}
+
+.signif-design {
+    list-style-type: disc;
+    padding-left: 25px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.signif-design li {
+    margin-bottom: 10px;
+}
+
+.signif-design li:nth-child(odd) {
+    color: var(--color-red);
+}
+
+.signif-design li:nth-child(even) {
+    color: var(--color-yellow);
+}
+
+.signif-design li ul {
+    list-style-type: circle;
+    padding-left: 15px;
+    margin-top: 5px;
+    color: #444;
+}
+
+.signif-design li ul li {
+    margin-bottom: 5px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--color-red);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li {
+    list-style: none;
 }
 
 nav a {
     text-decoration: none;
-    color: #333;
-}
-
-nav a:link {
-    color: #bb1b47;
-}
-
-nav a:visited {
-    color: #7a0032;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 nav a:hover {
+    background-color: var(--color-yellow);
+    color: #333;
+    transform: scale(1.1);
+}
+
+footer {
+    background: var(--gradient-footer);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+}
+
+footer a {
+    color: white;
     text-decoration: underline;
-    color: #d94e72;
+    font-weight: bold;
 }
 
-nav a:active {
-    color: #f07c9e;
-}
-
-nav a:focus {
-    outline: 2px solid #bb1b47;
-}
-
-nav ul {
-    list-style-type: none;
+footer a:hover {
+    color: var(--color-yellow);
 }
